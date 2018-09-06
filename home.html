@@ -1,0 +1,23 @@
+<div class="container">
+	<!-- NAVBAR -->
+	<nav class="navbar">
+		<a href="" ng-repeat="link in navbar"></a>
+	</nav>
+
+	<!-- HERO -->
+	<div class="hero">
+		
+	</div>
+
+	<h2>Classmates:</h2>
+	<div ng-repeat="article in classMates">
+		<h3>Name: {{ article.name }}</h3>
+		<h4>Last Name: {{ article.lastName }}</h4>
+		<p>Job: {{ article.job }}</p>
+		<button ng-click="articleS(article)"></button>
+	</div>
+
+	
+
+
+</div>
