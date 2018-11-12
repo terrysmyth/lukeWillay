@@ -99,6 +99,10 @@
 .hero {
 	height: 75vh;
 	background-color: #f5f5f5;
+	background-image: url(https://png.pngtree.com/thumb_back/fw800/back_pic/03/79/87/8057c2f33cc1d31.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 	display: flex;      
 	display: -webkit-flex;      
 	display: -ms-flex;  
@@ -107,14 +111,61 @@
 	-ms-justify-content: center;
 	align-items: center;    
 	-webkit-align-items: center;    
-	-ms-align-items: center;    
+	-ms-align-items: center;  
+	position: relative;  
+}
+
+.hero::after {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	content: "";
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e944ff+0,9872ff+55,947aff+100&0.7+0,0.7+55,0.7+100 */
+	background: -moz-linear-gradient(-45deg, rgba(233,68,255,0.7) 0%, rgba(152,114,255,0.7) 55%, rgba(148,122,255,0.7) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, rgba(233,68,255,0.7) 0%,rgba(152,114,255,0.7) 55%,rgba(148,122,255,0.7) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, rgba(233,68,255,0.7) 0%,rgba(152,114,255,0.7) 55%,rgba(148,122,255,0.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3e944ff', endColorstr='#b3947aff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	display: block;
+	z-index: 10;
 }
 
 .innerHero {
 	padding: 20px;
 	max-width: 350px;
 	text-align: center;
+	border-radius: 200px;
+	position: relative;
+	z-index: 11;
 }
+
+.innerHero h1{
+	color: white;
+	text-align: center;
+	line-height: 53px;
+	margin-bottom: 15px; 
+}
+
+.innerHero h5{
+	color: white;
+}
+
+.innerHero hr {
+    color: white;
+    background-color: #fff;
+    margin: 10px 0;
+    padding-bottom: 1px;
+}
+
+.innerHero a {
+	margin-top: 10px;
+	background-color: #fff;
+	color: #EAC67A;
+	border-radius: 5px;
+	padding: 10px 20px;
+}
+
 /*ABOUT*/
 
 .aboutWrapper {
@@ -124,6 +175,7 @@
 
 .about{
 	height: 70vh;
+	max-height: 500px;
 }
 
 .innerAbout {
@@ -205,6 +257,7 @@
 
 .menu{
 	height: 70vh;
+	max-height: 500px;
 }
 
 .innerMenu {
