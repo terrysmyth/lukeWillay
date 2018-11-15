@@ -122,11 +122,7 @@
 	bottom: 0;
 	left: 0;
 	content: "";
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e944ff+0,9872ff+55,947aff+100&0.7+0,0.7+55,0.7+100 */
-	background: -moz-linear-gradient(-45deg, rgba(233,68,255,0.7) 0%, rgba(152,114,255,0.7) 55%, rgba(148,122,255,0.7) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(-45deg, rgba(233,68,255,0.7) 0%,rgba(152,114,255,0.7) 55%,rgba(148,122,255,0.7) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(135deg, rgba(233,68,255,0.7) 0%,rgba(152,114,255,0.7) 55%,rgba(148,122,255,0.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3e944ff', endColorstr='#b3947aff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	background-color: #ccc;
 	display: block;
 	z-index: 10;
 }
@@ -171,11 +167,23 @@
 .aboutWrapper {
 	margin-top: 50px; 
 	margin-bottom: 50px; 
+	 
+}
+
+.about:nth-child(1) .innerAbout {
+ background-color: #984B43;
+}
+.about:nth-child(2) .innerAbout {
+	background-color: #233237;
+}
+.about:nth-child(3) .innerAbout {
+	background-color: #EAC67A;
 }
 
 .about{
 	height: 70vh;
 	max-height: 500px;
+	margin: 10px 0;
 }
 
 .innerAbout {
@@ -188,20 +196,43 @@
 	align-items: center;
 
 }
-.aboutIcon {
-	height: 200px;
-	width: 200px;
-	border-radius: 50%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: #fff;
-	border: 1px grey solid;
 
+.innerAbout h4 {
+	margin: 10px 0;
+	color: #fff;
+
+}
+
+.innerAbout p {
+	text-align: justify;
+	color: #fff;
+}
+
+.about:nth-child(1) .aboutIcon {
+	background-color: #EAC67A;
+}
+
+.about:nth-child(2) .aboutIcon {
+	background-color: #c18a5f;
+}
+
+.about:nth-child(3) .aboutIcon {
+	background-color: #984B43;
+}
+
+.aboutIcon {
+    height: 200px;
+    width: 200px;
+    border-radius: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eb7cff;
 }
 
 .aboutIcon i {
 	font-size: 80px;
+	color: #fff;
 }
 
 /*HeroInfo*/
@@ -209,7 +240,6 @@
 .heroInfo {
 	height: 75vh;
 	background-color: #f5f5f5;
-	background-image: url();
 	background-size: cover;
 	background-position: center;
 	display: flex;
@@ -223,19 +253,22 @@
 
 }
 
+
+
 .heroInfoImage {
 	height: 300px;
 	width: 20vh;
 	min-width: 300px;
 	max-width: 350px;
-	background-color: lightgrey;
+	/*background-color: lightgrey;*/
 	background-position: ;
 	background-repeat: no-repeat;
-	background-position: url();
+	background-image: url(https://3.bp.blogspot.com/-wIuQcI2mSX0/WaidutBit5I/AAAAAAABobU/QYUepyoqvMciqNrgNkosDUrBgjW2McVngCLcBGAs/s1600/AW518633_17.gif);
 	background-size: ;
 	padding: 50px;
 	text-align: center;
 	flex-direction: column;
+
 
 }
 
@@ -245,6 +278,7 @@
 	padding: 50px;
 	max-width: 350px;
 	text-align: center;
+
 
 }
 
