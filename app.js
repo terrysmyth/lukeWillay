@@ -3,6 +3,21 @@ angular.module("myApp", [])
 var app = angular.module("myApp", ["ngRoute", "ui.router"]);
 
 
+app.directive('navbar', function() {
+    return {
+        restrict: 'E',
+        templateUrl: 'directives/navbar.html'
+    }
+});
+
+app.directive('footer', function() {
+    return {
+        restrict: 'E',
+        templateUrl: 'directives/footer.html'
+    }
+});
+
+
 app.config(function($stateProvider) {
     var home = {
         name: 'home',
