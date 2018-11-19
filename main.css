@@ -76,6 +76,7 @@
  	border:#233237 2px solid;
  	transition-duration:0.4s;	 
  }
+
  input[type="text"]:focus,
  input[type="number"]:focus {
  	border:#984B43 2px solid;
@@ -92,6 +93,40 @@
  	border:#233237 2px solid;
  	border-radius:20px; 
  }
+
+ /* NAVBAR */
+
+
+.myNav {
+     display: flex;
+     display: -webkit-flex;
+     display: -ms-flex;
+     height:50px;
+     background-color:#EAC67A;   
+     align-items:center;
+     justify-content:flex-end;  
+     padding: 0px 50px;
+}
+
+.myNav a {
+    transition-duration: 0.5s;
+    color: #984B43;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 0 5px;
+    background-color: rgba(255,255,255, 0.3);
+}   
+.myNav a:hover {
+     opacity:0.4;
+     font-size:20px;
+     color:#233237;  
+     text-decoration: none; 
+}
+
+.myNav img {
+    height:40px;  
+    margin-right: auto;      
+}
 
 
 /* HERO */
@@ -122,7 +157,11 @@
 	bottom: 0;
 	left: 0;
 	content: "";
-	background-color: #ccc;
+	background: #eac67a; /* Old browsers */
+    background: -moz-linear-gradient(top, #eac67a 0%, #984b43 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #eac67a 0%,#984b43 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #eac67a 0%,#984b43 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eac67a', endColorstr='#984b43',GradientType=0 );
 	display: block;
 	z-index: 10;
 }
@@ -235,6 +274,83 @@
 	color: #fff;
 }
 
+/* FOOTER */
+.footerWrap {
+	background-color: #233237;
+    display:flex; 
+    display:flex; 
+    display:flex; 
+    padding:50px 20px;
+    justify-content: space-between;
+}
+
+.footerWrap h3 {
+    color:#fff; 
+}
+
+.footerWrap h2 {
+    color:#fff; 
+}
+
+.footerWrap p {
+    color:#EAC67A;
+    font-size:22px;  
+}
+
+.footerInner {
+    flex-grow: 1;
+    width: 60%;
+    min-width: 300px;
+    max-width: 600px;
+    padding:20px;
+}
+
+.footerInner input {
+    display: block;
+    border: 0;
+    background-color:#EAC67A;
+    width: 100%;
+    color: #fff;
+    margin:10px 0;
+    padding: 5px;
+}
+
+.footerInner textarea {
+    display: block;
+    border: 0;
+    width: 100%;
+    color: #fff;
+    margin:10px 0;
+    padding: 5px;
+    background-color:#EAC67A;
+}
+
+.footerInner input:focus {
+    border: 0;
+    border-radius:0;
+    background-color:#fff;
+}
+    
+.footerInner textarea:focus {
+    border: 0;
+    border-radius:0;
+    background-color:#fff;   
+}
+
+.footerInner.companyAbout {
+    text-align: right;
+}
+
+.footerInner input[type="submit"]{
+    background-color:#984B43;
+    transition-duration:0.3s;
+    cursor:pointer; 
+}
+
+.footerInner input[type="submit"]:hover {
+    background-color:#6A5FC6;
+}
+
 /*HeroInfo*/
 
 .heroInfo {
@@ -319,6 +435,7 @@
 .menuIcon i {
 	font-size: 80px;
 }
+
 
 
 
