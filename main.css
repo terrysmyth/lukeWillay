@@ -102,10 +102,13 @@
      display: -webkit-flex;
      display: -ms-flex;
      height:50px;
-     background-color:#EAC67A;   
+     background-color:#e2ba75;   
      align-items:center;
      justify-content:flex-end;  
      padding: 0px 50px;
+     position: fixed;
+     z-index: 100;
+     width: 100%;
 }
 
 .myNav a {
@@ -216,6 +219,16 @@
 	background-color: #233237;
 }
 .about:nth-child(3) .innerAbout {
+	background-color: #EAC67A;
+}
+
+.about:nth-child(4) .innerAbout {
+ background-color: #984B43;
+}
+.about:nth-child(5) .innerAbout {
+	background-color: #233237;
+}
+.about:nth-child(6) .innerAbout {
 	background-color: #EAC67A;
 }
 
@@ -419,44 +432,6 @@
 	border-radius: 5px;
 	color: #EAC67A;
 	padding: 10px;
-}
-
-/*Website Menu*/
-
-.menuWrapper {
-margin-top: 30px; 
-	margin-bottom: 70px; 
-}
-
-.menu{
-	height: 70vh;
-	max-height: 500px;
-}
-
-.innerMenu {
-	margin: 5px;
-	padding:15px;
-	background-color: #f5f5f5;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-
-}
-.menuIcon {
-	height: 200px;
-	width: 200px;
-	border-radius: 50%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: #fff;
-	border: 1px grey solid;
-
-}
-
-.menuIcon i {
-	font-size: 80px;
 }
 
 
