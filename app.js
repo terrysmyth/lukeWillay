@@ -1,6 +1,6 @@
 angular.module("myApp", [])
 
-var app = angular.module("myApp", ["ngRoute", "ui.router"]);
+var app = angular.module("myApp", ["ngRoute", "ui.router","firebase"]);
 
 
 app.directive('navbar', function() {
@@ -31,6 +31,12 @@ app.config(function($stateProvider) {
         templateUrl: 'about.html'
     }
 
+    var admin = {
+        name: 'admin',
+        url: 'admin',
+        templateUrl: 'admin.html'
+    }
+
     var article = {
         name: 'article',
         url: 'article',
@@ -40,6 +46,7 @@ app.config(function($stateProvider) {
     $stateProvider.state(home);
     $stateProvider.state(article);
     $stateProvider.state(about);
+    $stateProvider.state(admin);
    
 });
 
@@ -55,6 +62,10 @@ app.config(function($routeProvider) {
 
         .when("/archive", {
             templateUrl: "archive.html"
+        })
+
+        .when("/admin", {
+            templateUrl: "admin.html"
         })
 
         .when("/article", {
